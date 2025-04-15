@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ee91da6742954ee8b050fdbd4ab2d052</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section
+id="enterprise-policy-ai-chatbot-rag-powered-qa-system-with-langchain-agents--llm-optimization"
+class="cell markdown" id="1735c566-302d-48ad-88f7-7b52ee1ae4b3">
+<h1><strong>Enterprise Policy AI Chatbot: RAG-Powered QA System with
+LangChain Agents &amp; LLM Optimization</strong></h1>
+</section>
+<div class="cell markdown" id="362bb42d-92b1-4b2b-8e48-9231c14c969e">
+<h2 id="overview"><strong>Overview</strong></h2>
+<p>In this project, we will build an AI-powered assistant that can read
+and summarize private documents using <strong>Retrieval-Augmented
+Generation (RAG)</strong>, <strong>LangChain</strong>, and
+<strong>LLMs</strong>. This enables quick access to essential
+information without manually reading large volumes of text.</p>
+<h2 id="steps-to-build-the-solution"><strong>Steps to Build the
+Solution</strong></h2>
+<h3 id="1-understanding-rag--langchain"><strong>1. Understanding RAG
+&amp; LangChain</strong></h3>
+<ul>
+<li><strong>RAG (Retrieval-Augmented Generation)</strong>: Enhances LLMs
+by incorporating external/private data for better responses.<br />
+</li>
+<li><strong>LangChain</strong>: A framework for building applications
+that leverage LLMs with external data retrieval.</li>
+</ul>
+<h3 id="2-setting-up-the-environment"><strong>2. Setting Up the
+Environment</strong></h3>
+<ul>
+<li>Install required Python libraries: <code>langchain</code>,
+<code>faiss</code>, <code>openai</code>, etc.<br />
+</li>
+<li>Import necessary modules for document processing.</li>
+</ul>
+<h3 id="3-preprocessing-documents"><strong>3. Preprocessing
+Documents</strong></h3>
+<ul>
+<li><strong>Load the document</strong>: Use <code>DocumentLoaders</code>
+to read files.<br />
+</li>
+<li><strong>Split into chunks</strong>: Break large text into manageable
+parts.<br />
+</li>
+<li><strong>Embed and store</strong>: Convert text into embeddings and
+store in a vector database like <strong>FAISS</strong>.</li>
+</ul>
+<h3 id="4-implementing-the-rag-pipeline"><strong>4. Implementing the RAG
+Pipeline</strong></h3>
+<ul>
+<li><strong>Indexing</strong>: Prepare and store documents for
+retrieval.<br />
+</li>
+<li><strong>Retrieval &amp; Generation</strong>:
+<ul>
+<li>Retrieve relevant sections from the vector store based on user
+queries.<br />
+</li>
+<li>Use an LLM to generate responses using retrieved information.</li>
+</ul></li>
+</ul>
+<h3 id="5-enhancing-with-langchain-features"><strong>5. Enhancing with
+LangChain Features</strong></h3>
+<ul>
+<li><strong>Prompt Templates</strong>: Structure inputs for better
+results.<br />
+</li>
+<li><strong>Memory</strong>: Make conversations context-aware.<br />
+</li>
+<li><strong>Agent Integration</strong>: Automate summarization with AI
+agents.</li>
+</ul>
+<h2 id="key-takeaways"><strong>Key Takeaways</strong></h2>
+<p>By the end of this project, you will have a fully functional
+<strong>document summarization assistant</strong> that allows you to
+efficiently extract insights from private files without exposing them to
+external AI services.</p>
+</div>
+<section id="rag-architecture" class="cell markdown" id="WccBq10fzwA2">
+<h3>RAG Architecture</h3>
+</section>
+<div class="cell code" data-execution_count="2"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:168}"
+id="tGZGaj4gu-dt" data-outputId="446dbebf-1f46-4dc5-b9cf-a476f9289210">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> Image</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>image_path <span class="op">=</span> <span class="st">&quot;RAG_Architecture.PNG&quot;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Image(filename<span class="op">=</span>image_path)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="2">
+<p><img
+src="vertopal_de373d7c76f24ab68d10abb07e7af831/f8f2721f482a32958e64dea451a6141f5e092194.png" /></p>
+</div>
+</div>
+<section id="setup" class="cell markdown"
+id="785bb7b6-0326-4c07-a97b-37767df75f99">
+<h2>Setup</h2>
+</section>
+<div class="cell code" id="Qtvro-UAZHdq">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>capture</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install <span class="op">--</span>user <span class="st">&quot;langchain==0.1.16&quot;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install <span class="op">--</span>user <span class="st">&quot;huggingface == 0.0.1&quot;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install <span class="op">--</span>user <span class="st">&quot;huggingface-hub == 0.23.4&quot;</span></span></code></pre></div>
+</div>
+<div class="cell markdown" id="8c64f36e-d0e2-4356-a2bb-98454f9ef199">
+<p>After the installation of libraries is completed, restart your
+kernel</p>
+</div>
+<section id="importing-required-libraries" class="cell markdown"
+id="3d5ef7ec-3022-4b8b-8b03-abca7ab287bc">
+<h3>Importing required libraries</h3>
+</section>
+<div class="cell code" id="dqRimzG0SR_W">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>capture</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Clean previous installations</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip uninstall <span class="op">-</span>y torch torchvision torchaudio sentence<span class="op">-</span>transformers transformers</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Install CPU-only PyTorch + torchvision (compatible versions)</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install torch<span class="op">==</span><span class="fl">2.1.0</span><span class="op">+</span>cpu torchvision<span class="op">==</span><span class="fl">0.16.0</span><span class="op">+</span>cpu torchaudio<span class="op">==</span><span class="fl">0.13.0</span> <span class="op">--</span>index<span class="op">-</span>url https:<span class="op">//</span>download.pytorch.org<span class="op">/</span>whl<span class="op">/</span>cpu</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Install sentence-transformers (specific version that works with PyTorch 2.1.0)</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install sentence<span class="op">-</span>transformers<span class="op">==</span><span class="fl">2.5.1</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 4.  Ensure HuggingFace transformers is installed</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install transformers<span class="op">==</span><span class="fl">4.40.0</span></span></code></pre></div>
+</div>
+<div class="cell code" id="MZqc8tfnTNpl">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>capture</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Clean slate (ignore warnings)</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip uninstall <span class="op">-</span>y torch torchvision torchaudio sentence<span class="op">-</span>transformers transformers timm fastai</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Install CPU-only versions (critical: use --no-deps to prevent auto-upgrades)</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install <span class="op">--</span>no<span class="op">-</span>cache<span class="op">-</span><span class="bu">dir</span> <span class="op">--</span>no<span class="op">-</span>deps torch<span class="op">==</span><span class="fl">2.1.0</span><span class="op">+</span>cpu torchvision<span class="op">==</span><span class="fl">0.16.0</span><span class="op">+</span>cpu <span class="op">--</span>index<span class="op">-</span>url https:<span class="op">//</span>download.pytorch.org<span class="op">/</span>whl<span class="op">/</span>cpu</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Install sentence-transformers with pinned dependencies</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install <span class="op">--</span>no<span class="op">-</span>cache<span class="op">-</span><span class="bu">dir</span> sentence<span class="op">-</span>transformers<span class="op">==</span><span class="fl">2.5.1</span> transformers<span class="op">==</span><span class="fl">4.40.0</span></span></code></pre></div>
+</div>
+<div class="cell code" id="jRodHIYeTcdF">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>capture</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install sentence<span class="op">-</span>transformers</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install chromadb</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="61" id="22k2llgnyjiZ">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>capture</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install langchainhub</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="2"
+id="bc636389-b116-4219-bb30-8e07e21015da">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># You can use this section to suppress warnings generated by your code:</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> warn(<span class="op">*</span>args, <span class="op">**</span>kwargs):</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>warnings.warn <span class="op">=</span> warn</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">&#39;ignore&#39;</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co"># from langchain.document_loaders import TextLoader</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain.document_loaders.text <span class="im">import</span> TextLoader</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain.text_splitter <span class="im">import</span> CharacterTextSplitter</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain.vectorstores <span class="im">import</span> Chroma</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain.embeddings <span class="im">import</span> HuggingFaceEmbeddings</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain.chains <span class="im">import</span> RetrievalQA</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain.prompts <span class="im">import</span> PromptTemplate</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain.chains <span class="im">import</span> ConversationalRetrievalChain</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain.memory <span class="im">import</span> ConversationBufferMemory</span></code></pre></div>
+</div>
+<section id="preprocessing" class="cell markdown"
+id="4631a076-ff58-4f64-bb16-4a322df5f8e3">
+<h2>Preprocessing</h2>
+<h3 id="load-the-document-company-policies">Load the document (Company
+policies)</h3>
+</section>
+<div class="cell code" data-execution_count="3"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="6195ebc2-8bb7-4796-9a62-91bd26acbf9d"
+data-outputId="eeb84d8b-8af3-4020-bfe5-87294e5e8c62">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>filename <span class="op">=</span> <span class="st">&#39;companyPolicies.txt&#39;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(filename, <span class="st">&#39;r&#39;</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Read the contents of the file</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    contents <span class="op">=</span> <span class="bu">file</span>.read()</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="bu">len</span>(contents))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>8019
+</code></pre>
+</div>
+</div>
+<section id="splitting-the-document-into-chunks" class="cell markdown"
+id="d5d8ad85-ff84-4903-a694-914db4b00134">
+<h3>Splitting the document into chunks</h3>
+</section>
+<div class="cell markdown" id="c2ef7183-d704-47ce-af07-ab605c5d5033">
+<p>In this step, we split the document into smaller parts, called
+chunks, using LangChain. This helps manage large documents
+efficiently.</p>
+<p>Key Points:</p>
+<ul>
+<li><p>Chunking is part of the Indexing process.</p></li>
+<li><p>LangChain's CharacterTextSplitter is used to divide the document
+into smaller sections.</p></li>
+<li><p>Chunk size: Set to 1000 characters in this project.</p></li>
+<li><p>Default separator: \n\n (double newline).</p></li>
+<li><p>Custom separator: Can be changed using the separator parameter
+(e.g., separator="\n").</p></li>
+</ul>
+</div>
+<div class="cell code" data-execution_count="4"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="99f7d8ca-f2d8-46fc-a2d8-d3c356c22bac"
+data-outputId="73a2dbc0-157c-4571-ae87-89812c75e480">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>loader <span class="op">=</span> TextLoader(filename)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>documents <span class="op">=</span> loader.load()</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>text_splitter <span class="op">=</span> CharacterTextSplitter(chunk_size<span class="op">=</span><span class="dv">1000</span>, chunk_overlap<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>texts <span class="op">=</span> text_splitter.split_documents(documents)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(texts))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>11
+</code></pre>
+</div>
+</div>
+<section id="embedding-and-storing" class="cell markdown"
+id="7ace86dc-a6c3-411e-b470-3899bd49489f">
+<h3>Embedding and storing</h3>
+<p>In this step, the text chunks are converted into numerical
+representations using a process called embedding. This helps the
+computer efficiently recognize and retrieve relevant information
+later.</p>
+<p>The embedding process happens during Indexing, ensuring quick and
+accurate searches within the document. The following code creates an
+embedding model using Hugging Face and stores the embeddings in
+ChromaDB:</p>
+</section>
+<div class="cell code" data-execution_count="5"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="996871e4-0666-4937-88ab-2b4f39e8c627"
+data-outputId="c20df04e-85b5-4188-df62-6af5bf86d5e0">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain_community.embeddings <span class="im">import</span> HuggingFaceEmbeddings</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain_community.vectorstores <span class="im">import</span> Chroma</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert text documents to vectors</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Converting text documents to vectors...&quot;</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>embeddings <span class="op">=</span> HuggingFaceEmbeddings(</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    model_name<span class="op">=</span><span class="st">&quot;all-MiniLM-L6-v2&quot;</span>,</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>    model_kwargs<span class="op">=</span>{<span class="st">&#39;device&#39;</span>: <span class="st">&#39;cpu&#39;</span>},</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    encode_kwargs<span class="op">=</span>{<span class="st">&#39;normalize_embeddings&#39;</span>: <span class="va">False</span>}  <span class="co"># Reduces memory usage</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Storing vectors in ChromaDB and saving to ./chroma_db.&quot;</span>)</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>docsearch <span class="op">=</span> Chroma.from_documents(</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>    documents<span class="op">=</span>texts,</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>    embedding<span class="op">=</span>embeddings,  <span class="co"># Now explicitly bound to the DB</span></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>    persist_directory<span class="op">=</span><span class="st">&quot;./chroma_db&quot;</span>  <span class="co"># Allows reloading later</span></span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Converting text documents to vectors...
+Storing vectors in ChromaDB and saving to ./chroma_db.
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="6"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="zwX5VRoFbDs2" data-outputId="9d36f400-89fa-4a11-d9e9-100732529388">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Purpose: Reload existing ChromaDB for queries</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co"># When to Run: After restarting your notebook/kernel</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain_community.embeddings <span class="im">import</span> HuggingFaceEmbeddings</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain_community.vectorstores <span class="im">import</span> Chroma</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Reinitialize embeddings (MUST match initial config)</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>embeddings <span class="op">=</span> HuggingFaceEmbeddings(</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    model_name<span class="op">=</span><span class="st">&quot;all-MiniLM-L6-v2&quot;</span>,</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    model_kwargs<span class="op">=</span>{<span class="st">&#39;device&#39;</span>: <span class="st">&#39;cpu&#39;</span>},</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    encode_kwargs<span class="op">=</span>{<span class="st">&#39;normalize_embeddings&#39;</span>: <span class="va">False</span>}</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Load existing ChromaDB</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>docsearch <span class="op">=</span> Chroma(</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>    persist_directory<span class="op">=</span><span class="st">&quot;./chroma_db&quot;</span>,  <span class="co"># Load from disk</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>    embedding_function<span class="op">=</span>embeddings   <span class="co"># Required for queries</span></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Create retriever</span></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>retriever <span class="op">=</span> docsearch.as_retriever()</span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;✅ ChromaDB and retriever ready!&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>✅ ChromaDB and retriever ready!
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="0faf57a1-c04c-4194-9863-de7610a57560">
+<p>Up to this point, you've been performing the <code>Indexing</code>
+task. The next step is the <code>Retrieval</code> task.</p>
+</div>
+<div class="cell markdown" id="nkh0uT8kvfBk">
+<p>###Retrieve (Fetching Relevant Documents)</p>
+<p>The user’s question is encoded into a vector, which is then used to
+fetch the most relevant documents from the ChromaDB vector store.</p>
+</div>
+<div class="cell code" data-execution_count="7"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="SF7lDG2pwQDP" data-outputId="5dc1504d-f204-4fbf-da7c-341416e98efa">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>retriever <span class="op">=</span> docsearch.as_retriever(</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    search_type<span class="op">=</span><span class="st">&quot;similarity&quot;</span>,  <span class="co"># Default, good for policy QA</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    search_kwargs<span class="op">=</span>{</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;k&quot;</span>: <span class="dv">1</span>  <span class="co"># Number of documents to retrieve</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>query <span class="op">=</span> <span class="st">&quot;What is the mobile policy?&quot;</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>retrieved_docs <span class="op">=</span> retriever.get_relevant_documents(query)</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Top Retrieved Documents:&quot;</span>)</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, doc <span class="kw">in</span> <span class="bu">enumerate</span>(retrieved_docs):</span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>i<span class="op">+</span><span class="dv">1</span><span class="sc">}</span><span class="ss">. </span><span class="sc">{</span>doc<span class="sc">.</span>page_content<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>
+Top Retrieved Documents:
+1. Designated Areas: Smoking and vaping are permitted only in designated outdoor areas, clearly marked and located at least 25 feet from building entrances.
+Prohibited Areas: Smoking is strictly prohibited in all indoor spaces, company vehicles, and near air intake vents.
+Disposal: Cigarette butts and vaping waste must be properly disposed of in designated receptacles.
+Consideration: Smokers must be mindful of non-smoking colleagues and avoid congregating near doorways or walkways.
+Compliance: Violations may result in disciplinary action, including warnings or revocation of smoking privileges.
+
+This policy promotes a respectful and healthy workplace for all employees.
+
+Mobile Device Policy
+
+Our Mobile Device Policy establishes guidelines for the appropriate use of personal and company-issued mobile devices in the workplace.
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="BmE7ybvTwlP2">
+<p>✅ This ensures that the retrieval process works before proceeding to
+LLM.</p>
+</div>
+<div class="cell markdown" id="1B5mOKHywsTl">
+<p>###Prompt (Structuring the Input for LLM) The retrieved documents are
+formatted into a structured prompt that the LLM can use to generate an
+answer.</p>
+</div>
+<div class="cell code" data-execution_count="8" id="OPRQuWx_w2FU">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain.prompts <span class="im">import</span> PromptTemplate</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>policy_prompt <span class="op">=</span> PromptTemplate(</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    input_variables<span class="op">=</span>[<span class="st">&quot;context&quot;</span>, <span class="st">&quot;question&quot;</span>],</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    template<span class="op">=</span><span class="st">&quot;&quot;&quot;Analyze the following policy documents and provide a concise answer to the question.</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="st">Policy Documents:</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="sc">{context}</span></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="st">Question: </span><span class="sc">{question}</span></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a><span class="st">Answer in this format:</span></span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a><span class="st">- Start with &quot;According to company policy:&quot; if relevant</span></span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a><span class="st">- Provide a 1-2 sentence summary</span></span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a><span class="st">- List key points as bullet items</span></span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a><span class="st">- Highlight important numbers/dates like [25 feet]</span></span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a><span class="st">- If no policy is found, say &quot;This policy isn&#39;t covered in current documents&quot;</span></span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a><span class="st">Direct answer:&quot;&quot;&quot;</span></span>
+<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+</div>
+<div class="cell markdown" id="xRRRcRCLxC3f">
+<p>✅ Ensures the LLM receives structured and useful input.</p>
+</div>
+<div class="cell markdown" id="nHFz1lQxxJP-">
+<p>###LLM (Generating the Final Answer) We use a foundation model to
+process the prompt and generate a human-like response.</p>
+</div>
+<div class="cell code" data-execution_count="9"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="yX5TJn8lxVQn" data-outputId="594004f3-3035-4e2a-84eb-a7d81c6f42be">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain_community.llms <span class="im">import</span> HuggingFacePipeline</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> pipeline, AutoTokenizer, AutoModelForCausalLM</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load a small CPU-friendly model</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>model_name <span class="op">=</span> <span class="st">&quot;TinyLlama/TinyLlama-1.1B-Chat-v1.0&quot;</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>tokenizer <span class="op">=</span> AutoTokenizer.from_pretrained(model_name)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> AutoModelForCausalLM.from_pretrained(model_name)</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a local pipeline</span></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>llm_pipeline <span class="op">=</span> pipeline(</span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;text-generation&quot;</span>,</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>    model<span class="op">=</span>model,</span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>    tokenizer<span class="op">=</span>tokenizer,</span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>    max_new_tokens<span class="op">=</span><span class="dv">200</span>,</span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>    temperature<span class="op">=</span><span class="fl">0.3</span>,</span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>    device<span class="op">=</span><span class="st">&quot;cpu&quot;</span>  <span class="co"># Force CPU usage</span></span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb19-18"><a href="#cb19-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-19"><a href="#cb19-19" aria-hidden="true" tabindex="-1"></a>llm <span class="op">=</span> HuggingFacePipeline(pipeline<span class="op">=</span>llm_pipeline)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>Device set to use cpu
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="g9cF__ach_Wa">
+<p>###Chatbot with Memory We'll use LangChain's
+ConversationBufferMemory. This will allow the bot to remember previous
+interactions in the current session.</p>
+</div>
+<div class="cell code" data-execution_count="59"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:217,&quot;referenced_widgets&quot;:[&quot;a9633ec120fa47e6a5b2ed751158dc28&quot;,&quot;2c897aacb3f94c23836ad8aaae20f1cb&quot;,&quot;87dc333261d5437e993a57a7128fb553&quot;,&quot;016965d3796b44248b566ae1298cc4d8&quot;,&quot;1de4f0c7033049e2a6eb5de80f357f43&quot;,&quot;8d3d386ce12f434e97e56cebc3c54c10&quot;,&quot;539a875e84df460293aeec148a90f494&quot;,&quot;0be319dd23c548b4a0e47105546a9102&quot;,&quot;e727665ecd1d46149645548a177874ca&quot;,&quot;9ef25f5ab254436a8953464eba1b314d&quot;,&quot;8c39a1d7411f49b580319e628bbe4312&quot;,&quot;5e2c3536cb724e8a9919b4657ef86d24&quot;,&quot;9e91b6d0dae54f5ea6bec2c1c250167c&quot;,&quot;76314a75a21042eba45d85ea4800e80a&quot;,&quot;b7de9c59f8ee440ba462666daa78bb27&quot;,&quot;275e4c2f21c54add9951928d12d2987b&quot;,&quot;25a306bc44884a29b9d22f3d5d91c906&quot;,&quot;5e92607590c048d591b5cb6b168bad73&quot;]}"
+id="NVMhxbVYdxfm" data-outputId="7fcd79ce-0f4a-41e0-9c25-14ce59784d17">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain_community.vectorstores <span class="im">import</span> Chroma</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain_community.embeddings <span class="im">import</span> HuggingFaceEmbeddings</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain.memory <span class="im">import</span> ConversationBufferMemory</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain.chains <span class="im">import</span> ConversationalRetrievalChain</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> display, clear_output, HTML</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> ipywidgets <span class="im">as</span> widgets</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize components</span></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>embeddings <span class="op">=</span> HuggingFaceEmbeddings(</span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>    model_name<span class="op">=</span><span class="st">&quot;all-MiniLM-L6-v2&quot;</span>,</span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>    model_kwargs<span class="op">=</span>{<span class="st">&#39;device&#39;</span>: <span class="st">&#39;cpu&#39;</span>}</span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>docsearch <span class="op">=</span> Chroma(</span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>    persist_directory<span class="op">=</span><span class="st">&quot;./chroma_db&quot;</span>,</span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a>    embedding_function<span class="op">=</span>embeddings</span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a>memory <span class="op">=</span> ConversationBufferMemory(</span>
+<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>    memory_key<span class="op">=</span><span class="st">&quot;chat_history&quot;</span>,</span>
+<span id="cb21-22"><a href="#cb21-22" aria-hidden="true" tabindex="-1"></a>    return_messages<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb21-23"><a href="#cb21-23" aria-hidden="true" tabindex="-1"></a>    output_key<span class="op">=</span><span class="st">&#39;answer&#39;</span></span>
+<span id="cb21-24"><a href="#cb21-24" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb21-25"><a href="#cb21-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-26"><a href="#cb21-26" aria-hidden="true" tabindex="-1"></a>qa_chain <span class="op">=</span> ConversationalRetrievalChain.from_llm(</span>
+<span id="cb21-27"><a href="#cb21-27" aria-hidden="true" tabindex="-1"></a>    llm<span class="op">=</span>llm,</span>
+<span id="cb21-28"><a href="#cb21-28" aria-hidden="true" tabindex="-1"></a>    retriever<span class="op">=</span>docsearch.as_retriever(search_kwargs<span class="op">=</span>{<span class="st">&quot;k&quot;</span>: <span class="dv">2</span>}),</span>
+<span id="cb21-29"><a href="#cb21-29" aria-hidden="true" tabindex="-1"></a>    memory<span class="op">=</span>memory,</span>
+<span id="cb21-30"><a href="#cb21-30" aria-hidden="true" tabindex="-1"></a>    combine_docs_chain_kwargs<span class="op">=</span>{<span class="st">&quot;prompt&quot;</span>: policy_prompt},</span>
+<span id="cb21-31"><a href="#cb21-31" aria-hidden="true" tabindex="-1"></a>    verbose<span class="op">=</span><span class="va">False</span></span>
+<span id="cb21-32"><a href="#cb21-32" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb21-33"><a href="#cb21-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-34"><a href="#cb21-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Modified UI Elements with memory testing features</span></span>
+<span id="cb21-35"><a href="#cb21-35" aria-hidden="true" tabindex="-1"></a>input_box <span class="op">=</span> widgets.Text(placeholder<span class="op">=</span><span class="st">&#39;Ask about policies...&#39;</span>, layout<span class="op">=</span>widgets.Layout(width<span class="op">=</span><span class="st">&#39;80%&#39;</span>))</span>
+<span id="cb21-36"><a href="#cb21-36" aria-hidden="true" tabindex="-1"></a>output_area <span class="op">=</span> widgets.Output(layout<span class="op">=</span>widgets.Layout(max_height<span class="op">=</span><span class="st">&#39;500px&#39;</span>, overflow<span class="op">=</span><span class="st">&#39;auto&#39;</span>))</span>
+<span id="cb21-37"><a href="#cb21-37" aria-hidden="true" tabindex="-1"></a>submit_btn <span class="op">=</span> widgets.Button(description<span class="op">=</span><span class="st">&quot;Ask&quot;</span>, button_style<span class="op">=</span><span class="st">&#39;primary&#39;</span>)</span>
+<span id="cb21-38"><a href="#cb21-38" aria-hidden="true" tabindex="-1"></a>memory_test_btn <span class="op">=</span> widgets.Button(description<span class="op">=</span><span class="st">&quot;Test Memory&quot;</span>, button_style<span class="op">=</span><span class="st">&#39;info&#39;</span>)</span>
+<span id="cb21-39"><a href="#cb21-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-40"><a href="#cb21-40" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> show_thinking():</span>
+<span id="cb21-41"><a href="#cb21-41" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;Display thinking animation&quot;&quot;&quot;</span></span>
+<span id="cb21-42"><a href="#cb21-42" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> output_area:</span>
+<span id="cb21-43"><a href="#cb21-43" aria-hidden="true" tabindex="-1"></a>        clear_output()</span>
+<span id="cb21-44"><a href="#cb21-44" aria-hidden="true" tabindex="-1"></a>        display(HTML(<span class="st">&quot;&quot;&quot;</span></span>
+<span id="cb21-45"><a href="#cb21-45" aria-hidden="true" tabindex="-1"></a><span class="st">        &lt;div style=&#39;text-align:center&#39;&gt;</span></span>
+<span id="cb21-46"><a href="#cb21-46" aria-hidden="true" tabindex="-1"></a><span class="st">            &lt;div style=&#39;border:5px solid #f3f3f3; border-top:5px solid #3498db; border-radius:50%;</span></span>
+<span id="cb21-47"><a href="#cb21-47" aria-hidden="true" tabindex="-1"></a><span class="st">                      width:30px; height:30px; animation:spin 1s linear infinite; margin:10px auto;&#39;&gt;&lt;/div&gt;</span></span>
+<span id="cb21-48"><a href="#cb21-48" aria-hidden="true" tabindex="-1"></a><span class="st">            &lt;p&gt;Searching policies...&lt;/p&gt;</span></span>
+<span id="cb21-49"><a href="#cb21-49" aria-hidden="true" tabindex="-1"></a><span class="st">        &lt;/div&gt;</span></span>
+<span id="cb21-50"><a href="#cb21-50" aria-hidden="true" tabindex="-1"></a><span class="st">        &lt;style&gt;@keyframes spin {0%{transform:rotate(0deg);}100%{transform:rotate(360deg);</span><span class="sc">}}</span><span class="st">&lt;/style&gt;</span></span>
+<span id="cb21-51"><a href="#cb21-51" aria-hidden="true" tabindex="-1"></a><span class="st">        &quot;&quot;&quot;</span>))</span>
+<span id="cb21-52"><a href="#cb21-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-53"><a href="#cb21-53" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> test_memory(b):</span>
+<span id="cb21-54"><a href="#cb21-54" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;Explicitly test memory functionality&quot;&quot;&quot;</span></span>
+<span id="cb21-55"><a href="#cb21-55" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> output_area:</span>
+<span id="cb21-56"><a href="#cb21-56" aria-hidden="true" tabindex="-1"></a>        clear_output()</span>
+<span id="cb21-57"><a href="#cb21-57" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> memory.chat_memory.messages:</span>
+<span id="cb21-58"><a href="#cb21-58" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">&quot;🤖 No conversation history yet&quot;</span>)</span>
+<span id="cb21-59"><a href="#cb21-59" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span></span>
+<span id="cb21-60"><a href="#cb21-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-61"><a href="#cb21-61" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;🧠 Memory Contents:&quot;</span>)</span>
+<span id="cb21-62"><a href="#cb21-62" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i, msg <span class="kw">in</span> <span class="bu">enumerate</span>(memory.chat_memory.messages):</span>
+<span id="cb21-63"><a href="#cb21-63" aria-hidden="true" tabindex="-1"></a>            prefix <span class="op">=</span> <span class="st">&quot;👤 Question&quot;</span> <span class="cf">if</span> i <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span> <span class="cf">else</span> <span class="st">&quot;🤖 Answer&quot;</span></span>
+<span id="cb21-64"><a href="#cb21-64" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>prefix<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>i<span class="op">//</span><span class="dv">2</span> <span class="op">+</span> <span class="dv">1</span><span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>msg<span class="sc">.</span>content[:<span class="dv">200</span>]<span class="sc">}{</span><span class="st">&#39;...&#39;</span> <span class="cf">if</span> <span class="bu">len</span>(msg.content) <span class="op">&gt;</span> <span class="dv">200</span> <span class="cf">else</span> <span class="st">&#39;&#39;</span><span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb21-65"><a href="#cb21-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-66"><a href="#cb21-66" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> on_submit(b):</span>
+<span id="cb21-67"><a href="#cb21-67" aria-hidden="true" tabindex="-1"></a>    question <span class="op">=</span> input_box.value.strip()</span>
+<span id="cb21-68"><a href="#cb21-68" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> question:</span>
+<span id="cb21-69"><a href="#cb21-69" aria-hidden="true" tabindex="-1"></a>        <span class="cf">with</span> output_area:</span>
+<span id="cb21-70"><a href="#cb21-70" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">&quot;⚠️ Please enter a question&quot;</span>)</span>
+<span id="cb21-71"><a href="#cb21-71" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span></span>
+<span id="cb21-72"><a href="#cb21-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-73"><a href="#cb21-73" aria-hidden="true" tabindex="-1"></a>    show_thinking()</span>
+<span id="cb21-74"><a href="#cb21-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-75"><a href="#cb21-75" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb21-76"><a href="#cb21-76" aria-hidden="true" tabindex="-1"></a>        start_time <span class="op">=</span> time.time()</span>
+<span id="cb21-77"><a href="#cb21-77" aria-hidden="true" tabindex="-1"></a>        result <span class="op">=</span> qa_chain({<span class="st">&quot;question&quot;</span>: question})</span>
+<span id="cb21-78"><a href="#cb21-78" aria-hidden="true" tabindex="-1"></a>        response <span class="op">=</span> result[<span class="st">&quot;answer&quot;</span>]</span>
+<span id="cb21-79"><a href="#cb21-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-80"><a href="#cb21-80" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="st">&quot;Answer in this format:&quot;</span> <span class="kw">in</span> response:</span>
+<span id="cb21-81"><a href="#cb21-81" aria-hidden="true" tabindex="-1"></a>            response <span class="op">=</span> response.split(<span class="st">&quot;Direct answer:&quot;</span>)[<span class="op">-</span><span class="dv">1</span>].strip()</span>
+<span id="cb21-82"><a href="#cb21-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-83"><a href="#cb21-83" aria-hidden="true" tabindex="-1"></a>        <span class="cf">with</span> output_area:</span>
+<span id="cb21-84"><a href="#cb21-84" aria-hidden="true" tabindex="-1"></a>            clear_output()</span>
+<span id="cb21-85"><a href="#cb21-85" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f&quot;👤 You: </span><span class="sc">{</span>question<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb21-86"><a href="#cb21-86" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f&quot;🤖 Bot: </span><span class="sc">{</span>response<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb21-87"><a href="#cb21-87" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="ss">⏱️ Response time: </span><span class="sc">{</span>time<span class="sc">.</span>time()<span class="op">-</span>start_time<span class="sc">:.1f}</span><span class="ss"> seconds&quot;</span>)</span>
+<span id="cb21-88"><a href="#cb21-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-89"><a href="#cb21-89" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Enhanced memory display</span></span>
+<span id="cb21-90"><a href="#cb21-90" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">--- Current Conversation Context ---&quot;</span>)</span>
+<span id="cb21-91"><a href="#cb21-91" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f&quot;Total exchanges: </span><span class="sc">{</span><span class="bu">len</span>(memory.chat_memory.messages)<span class="op">//</span><span class="dv">2</span><span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb21-92"><a href="#cb21-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-93"><a href="#cb21-93" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Show last 2 exchanges with clear labels</span></span>
+<span id="cb21-94"><a href="#cb21-94" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> i, msg <span class="kw">in</span> <span class="bu">enumerate</span>(memory.chat_memory.messages[<span class="op">-</span><span class="dv">4</span>:]):</span>
+<span id="cb21-95"><a href="#cb21-95" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> i <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb21-96"><a href="#cb21-96" aria-hidden="true" tabindex="-1"></a>                    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="ss">🗣️ Q</span><span class="sc">{</span>i<span class="op">//</span><span class="dv">2</span> <span class="op">+</span> <span class="dv">1</span><span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>msg<span class="sc">.</span>content[:<span class="dv">100</span>]<span class="sc">}{</span><span class="st">&#39;...&#39;</span> <span class="cf">if</span> <span class="bu">len</span>(msg.content) <span class="op">&gt;</span> <span class="dv">100</span> <span class="cf">else</span> <span class="st">&#39;&#39;</span><span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb21-97"><a href="#cb21-97" aria-hidden="true" tabindex="-1"></a>                <span class="cf">else</span>:</span>
+<span id="cb21-98"><a href="#cb21-98" aria-hidden="true" tabindex="-1"></a>                    <span class="bu">print</span>(<span class="ss">f&quot;🤖 A</span><span class="sc">{</span>i<span class="op">//</span><span class="dv">2</span> <span class="op">+</span> <span class="dv">1</span><span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>msg<span class="sc">.</span>content[:<span class="dv">100</span>]<span class="sc">}{</span><span class="st">&#39;...&#39;</span> <span class="cf">if</span> <span class="bu">len</span>(msg.content) <span class="op">&gt;</span> <span class="dv">100</span> <span class="cf">else</span> <span class="st">&#39;&#39;</span><span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb21-99"><a href="#cb21-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-100"><a href="#cb21-100" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb21-101"><a href="#cb21-101" aria-hidden="true" tabindex="-1"></a>        <span class="cf">with</span> output_area:</span>
+<span id="cb21-102"><a href="#cb21-102" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f&quot;🚨 Error: </span><span class="sc">{</span><span class="bu">str</span>(e)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb21-103"><a href="#cb21-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-104"><a href="#cb21-104" aria-hidden="true" tabindex="-1"></a>    input_box.value <span class="op">=</span> <span class="st">&quot;&quot;</span></span>
+<span id="cb21-105"><a href="#cb21-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-106"><a href="#cb21-106" aria-hidden="true" tabindex="-1"></a><span class="co"># Display enhanced interface</span></span>
+<span id="cb21-107"><a href="#cb21-107" aria-hidden="true" tabindex="-1"></a>display(widgets.VBox([</span>
+<span id="cb21-108"><a href="#cb21-108" aria-hidden="true" tabindex="-1"></a>    widgets.Label(<span class="st">&quot;💼 Policy Assistant (Memory Test Mode)&quot;</span>, style<span class="op">=</span>{<span class="st">&#39;font_weight&#39;</span>:<span class="st">&#39;bold&#39;</span>}),</span>
+<span id="cb21-109"><a href="#cb21-109" aria-hidden="true" tabindex="-1"></a>    input_box,</span>
+<span id="cb21-110"><a href="#cb21-110" aria-hidden="true" tabindex="-1"></a>    widgets.HBox([submit_btn, memory_test_btn]),</span>
+<span id="cb21-111"><a href="#cb21-111" aria-hidden="true" tabindex="-1"></a>    output_area</span>
+<span id="cb21-112"><a href="#cb21-112" aria-hidden="true" tabindex="-1"></a>]))</span>
+<span id="cb21-113"><a href="#cb21-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-114"><a href="#cb21-114" aria-hidden="true" tabindex="-1"></a>submit_btn.on_click(on_submit)</span>
+<span id="cb21-115"><a href="#cb21-115" aria-hidden="true" tabindex="-1"></a>memory_test_btn.on_click(test_memory)</span></code></pre></div>
+<div class="output display_data">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;model_id&quot;</span><span class="fu">:</span><span class="st">&quot;a9633ec120fa47e6a5b2ed751158dc28&quot;</span><span class="fu">,</span><span class="dt">&quot;version_major&quot;</span><span class="fu">:</span><span class="dv">2</span><span class="fu">,</span><span class="dt">&quot;version_minor&quot;</span><span class="fu">:</span><span class="dv">0</span><span class="fu">}</span></span></code></pre></div>
+</div>
+</div>
+<div class="cell markdown" id="dcZUSeWiyLPS">
+<p>###COMPANY POLICY QA AGENT</p>
+<p>The following AI agent answers HR policy questions by searching
+company documents. It combines document retrieval with smart reasoning
+to provide accurate responses, while maintaining conversation history.
+The interface shows real-time status and prevents hallucinations by
+falling back to "Contact HR" when uncertain.</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="SzkM5dPznD8g" data-outputId="27f5165c-a793-4070-972a-4953369f0938">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain.agents <span class="im">import</span> Tool, AgentExecutor, initialize_agent</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain.chains <span class="im">import</span> RetrievalQA</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain.memory <span class="im">import</span> ConversationBufferMemory</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain.prompts <span class="im">import</span> PromptTemplate</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> policy_agent():</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1. Optimized Retrieval QA for TinyLlama</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>    qa_prompt <span class="op">=</span> PromptTemplate(</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>        input_variables<span class="op">=</span>[<span class="st">&quot;context&quot;</span>, <span class="st">&quot;question&quot;</span>],</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>        template<span class="op">=</span><span class="st">&quot;&quot;&quot;Summarize this policy in 100 words or less:</span></span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a><span class="st">        Policy Excerpt: </span><span class="sc">{context}</span></span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a><span class="st">        Question: </span><span class="sc">{question}</span></span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a><span class="st">        Answer MUST BE:</span></span>
+<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a><span class="st">        - 2 to 3 sentences maximum</span></span>
+<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-18"><a href="#cb23-18" aria-hidden="true" tabindex="-1"></a><span class="st">        - If unclear, respond &quot;See HR handbook section [X.Y]&quot;</span></span>
+<span id="cb23-19"><a href="#cb23-19" aria-hidden="true" tabindex="-1"></a><span class="st">        Answer:&quot;&quot;&quot;</span></span>
+<span id="cb23-20"><a href="#cb23-20" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb23-21"><a href="#cb23-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-22"><a href="#cb23-22" aria-hidden="true" tabindex="-1"></a>    qa <span class="op">=</span> RetrievalQA.from_chain_type(</span>
+<span id="cb23-23"><a href="#cb23-23" aria-hidden="true" tabindex="-1"></a>        llm<span class="op">=</span>llm,</span>
+<span id="cb23-24"><a href="#cb23-24" aria-hidden="true" tabindex="-1"></a>        chain_type<span class="op">=</span><span class="st">&quot;stuff&quot;</span>,</span>
+<span id="cb23-25"><a href="#cb23-25" aria-hidden="true" tabindex="-1"></a>        retriever<span class="op">=</span>docsearch.as_retriever(</span>
+<span id="cb23-26"><a href="#cb23-26" aria-hidden="true" tabindex="-1"></a>            search_kwargs<span class="op">=</span>{</span>
+<span id="cb23-27"><a href="#cb23-27" aria-hidden="true" tabindex="-1"></a>                <span class="st">&quot;k&quot;</span>: <span class="dv">1</span>,  <span class="co"># Only 1 document</span></span>
+<span id="cb23-28"><a href="#cb23-28" aria-hidden="true" tabindex="-1"></a>                <span class="st">&quot;score_threshold&quot;</span>: <span class="fl">0.8</span>  <span class="co"># High confidence matches only</span></span>
+<span id="cb23-29"><a href="#cb23-29" aria-hidden="true" tabindex="-1"></a>            }</span>
+<span id="cb23-30"><a href="#cb23-30" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb23-31"><a href="#cb23-31" aria-hidden="true" tabindex="-1"></a>        chain_type_kwargs<span class="op">=</span>{</span>
+<span id="cb23-32"><a href="#cb23-32" aria-hidden="true" tabindex="-1"></a>            <span class="st">&quot;prompt&quot;</span>: qa_prompt,</span>
+<span id="cb23-33"><a href="#cb23-33" aria-hidden="true" tabindex="-1"></a>            <span class="st">&quot;document_variable_name&quot;</span>: <span class="st">&quot;context&quot;</span></span>
+<span id="cb23-34"><a href="#cb23-34" aria-hidden="true" tabindex="-1"></a>        },</span>
+<span id="cb23-35"><a href="#cb23-35" aria-hidden="true" tabindex="-1"></a>        verbose<span class="op">=</span><span class="va">False</span></span>
+<span id="cb23-36"><a href="#cb23-36" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb23-37"><a href="#cb23-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-38"><a href="#cb23-38" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2. Tools with TinyLlama-optimized limits</span></span>
+<span id="cb23-39"><a href="#cb23-39" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> get_policy(query):</span>
+<span id="cb23-40"><a href="#cb23-40" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
+<span id="cb23-41"><a href="#cb23-41" aria-hidden="true" tabindex="-1"></a>            result <span class="op">=</span> qa.run(question<span class="op">=</span>query[:<span class="dv">50</span>])  <span class="co"># Very short questions</span></span>
+<span id="cb23-42"><a href="#cb23-42" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> result[:<span class="dv">150</span>]  <span class="co"># Hard token limit for TinyLlama</span></span>
+<span id="cb23-43"><a href="#cb23-43" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span>:</span>
+<span id="cb23-44"><a href="#cb23-44" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="st">&quot;Contact HR for policy details&quot;</span></span>
+<span id="cb23-45"><a href="#cb23-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-46"><a href="#cb23-46" aria-hidden="true" tabindex="-1"></a>    tools <span class="op">=</span> [</span>
+<span id="cb23-47"><a href="#cb23-47" aria-hidden="true" tabindex="-1"></a>        Tool(</span>
+<span id="cb23-48"><a href="#cb23-48" aria-hidden="true" tabindex="-1"></a>            name<span class="op">=</span><span class="st">&quot;HR_Policy_Lookup&quot;</span>,</span>
+<span id="cb23-49"><a href="#cb23-49" aria-hidden="true" tabindex="-1"></a>            func<span class="op">=</span>get_policy,</span>
+<span id="cb23-50"><a href="#cb23-50" aria-hidden="true" tabindex="-1"></a>            description<span class="op">=</span><span class="st">&quot;ONLY for verbatim policy quotes. Input must be under 50 characters.&quot;</span></span>
+<span id="cb23-51"><a href="#cb23-51" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb23-52"><a href="#cb23-52" aria-hidden="true" tabindex="-1"></a>        Tool(</span>
+<span id="cb23-53"><a href="#cb23-53" aria-hidden="true" tabindex="-1"></a>            name<span class="op">=</span><span class="st">&quot;HR_Contact&quot;</span>,</span>
+<span id="cb23-54"><a href="#cb23-54" aria-hidden="true" tabindex="-1"></a>            func<span class="op">=</span><span class="kw">lambda</span> _: <span class="st">&quot;Please contact HR at hr@company.com&quot;</span>,</span>
+<span id="cb23-55"><a href="#cb23-55" aria-hidden="true" tabindex="-1"></a>            description<span class="op">=</span><span class="st">&quot;Use when policy is not found or question is too complex&quot;</span></span>
+<span id="cb23-56"><a href="#cb23-56" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb23-57"><a href="#cb23-57" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb23-58"><a href="#cb23-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-59"><a href="#cb23-59" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3. Using CONVERSATIONAL_REACT_DESCRIPTION instead</span></span>
+<span id="cb23-60"><a href="#cb23-60" aria-hidden="true" tabindex="-1"></a>    agent <span class="op">=</span> initialize_agent(</span>
+<span id="cb23-61"><a href="#cb23-61" aria-hidden="true" tabindex="-1"></a>        tools<span class="op">=</span>tools,</span>
+<span id="cb23-62"><a href="#cb23-62" aria-hidden="true" tabindex="-1"></a>        llm<span class="op">=</span>llm,</span>
+<span id="cb23-63"><a href="#cb23-63" aria-hidden="true" tabindex="-1"></a>        agent<span class="op">=</span>AgentType.CONVERSATIONAL_REACT_DESCRIPTION,</span>
+<span id="cb23-64"><a href="#cb23-64" aria-hidden="true" tabindex="-1"></a>        memory<span class="op">=</span>ConversationBufferMemory(memory_key<span class="op">=</span><span class="st">&quot;chat_history&quot;</span>),</span>
+<span id="cb23-65"><a href="#cb23-65" aria-hidden="true" tabindex="-1"></a>        verbose<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb23-66"><a href="#cb23-66" aria-hidden="true" tabindex="-1"></a>        max_execution_time<span class="op">=</span><span class="dv">5</span>,  <span class="co"># 5s timeout for CPU</span></span>
+<span id="cb23-67"><a href="#cb23-67" aria-hidden="true" tabindex="-1"></a>        max_iterations<span class="op">=</span><span class="dv">1</span>,  <span class="co"># Only 1 reasoning step</span></span>
+<span id="cb23-68"><a href="#cb23-68" aria-hidden="true" tabindex="-1"></a>        handle_parsing_errors<span class="op">=</span><span class="st">&quot;Please ask a shorter policy question (max 50 chars)&quot;</span></span>
+<span id="cb23-69"><a href="#cb23-69" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb23-70"><a href="#cb23-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-71"><a href="#cb23-71" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;HR Policy Assistant (TinyLlama CPU) ready. Ask short questions or &#39;quit&#39;:&quot;</span>)</span>
+<span id="cb23-72"><a href="#cb23-72" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb23-73"><a href="#cb23-73" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
+<span id="cb23-74"><a href="#cb23-74" aria-hidden="true" tabindex="-1"></a>            query <span class="op">=</span> <span class="bu">input</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Question: &quot;</span>).strip()[:<span class="dv">50</span>]  <span class="co"># Hard input limit</span></span>
+<span id="cb23-75"><a href="#cb23-75" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> query.lower() <span class="kw">in</span> [<span class="st">&quot;quit&quot;</span>, <span class="st">&quot;exit&quot;</span>]:</span>
+<span id="cb23-76"><a href="#cb23-76" aria-hidden="true" tabindex="-1"></a>                <span class="cf">break</span></span>
+<span id="cb23-77"><a href="#cb23-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-78"><a href="#cb23-78" aria-hidden="true" tabindex="-1"></a>            response <span class="op">=</span> agent.run(<span class="bu">input</span><span class="op">=</span>query)</span>
+<span id="cb23-79"><a href="#cb23-79" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Clean the output to remove agent thoughts if present</span></span>
+<span id="cb23-80"><a href="#cb23-80" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="st">&quot;Final Answer:&quot;</span> <span class="kw">in</span> response:</span>
+<span id="cb23-81"><a href="#cb23-81" aria-hidden="true" tabindex="-1"></a>                response <span class="op">=</span> response.split(<span class="st">&quot;Final Answer:&quot;</span>)[<span class="op">-</span><span class="dv">1</span>].strip()</span>
+<span id="cb23-82"><a href="#cb23-82" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f&quot;Answer: </span><span class="sc">{</span>response[:<span class="dv">150</span>]<span class="sc">}</span><span class="ss">&quot;</span>)  <span class="co"># Enforce output length</span></span>
+<span id="cb23-83"><a href="#cb23-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-84"><a href="#cb23-84" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb23-85"><a href="#cb23-85" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">&quot;Please ask a simpler policy question or contact HR&quot;</span>)</span>
+<span id="cb23-86"><a href="#cb23-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-87"><a href="#cb23-87" aria-hidden="true" tabindex="-1"></a>policy_agent()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>HR Policy Assistant (TinyLlama CPU) ready. Ask short questions or &#39;quit&#39;:
+
+Question: what is the smoking policy?
+Answer: Sure, here&#39;s a general smoking policy that most companies have:
+
+- Smoking is prohibited in all indoor areas, including offices, restaurants, and lobb
+</code></pre>
+</div>
+</div>
+</body>
+</html>
